@@ -15,22 +15,20 @@ For experimentation I am using CentOS 7 VMs on AWS.
 
 #### Master
 
-1.
-    + curl -L https://bootstrap.saltstack.com -o install_salt.sh
-    + sudo sh install_salt.sh -M
-2.
-    + Make sure ports 4505 and 4506 are open
+1.      curl -L https://bootstrap.saltstack.com -o install_salt.sh
+        sudo sh install_salt.sh -M
+2.      Make sure ports 4505 and 4506 are open
 
 #### Minion
 
 1.
-    + curl -L https://bootstrap.saltstack.com -o install_salt.sh
-    + sudo sh install_salt.sh
+      curl -L https://bootstrap.saltstack.com -o install_salt.sh
+      sudo sh install_salt.sh
 2.
-    + Edit /etc/salt/minion
-    + master should be set to the IP of the master
+      Edit /etc/salt/minion
+      master should be set to the IP of the master
 3.
-    + sudo service salt-minion restart
+      sudo service salt-minion restart
 
 ### Step 2
 
