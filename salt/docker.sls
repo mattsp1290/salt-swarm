@@ -2,7 +2,7 @@ Check Yum for updates:
   cmd.run:
     - name: yum check-update
     - stateful:
-      - test_name: ls
+      - test_name: echo "{}"
 
 Install Docker:
   cmd.run:
@@ -11,3 +11,8 @@ Install Docker:
 Add Docker User:
   cmd.run:
     - name: usermod -aG docker centos
+
+docker:
+  service:
+    - enable: True
+    - reload: True
