@@ -13,6 +13,6 @@ Add Docker User:
     - name: usermod -aG docker centos
 
 docker:
-  service:
+  service.running:
     - enable: True
     - reload: True
