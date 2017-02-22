@@ -28,6 +28,7 @@ Setup:
 2)
   Master:
     1)
+      Accepts all keys from minions
       sudo salt-key --accept-all
     2)
       run a test command to ensure everything works ex:
@@ -35,3 +36,6 @@ Setup:
     3)
       copy salt states to the base environment for salt
       (by default this is /srv/salt)
+    4)
+      install Docker on all minions
+      sudo salt '*' state.apply docker
