@@ -12,14 +12,17 @@ For experimentation I am using CentOS 7 VMs on AWS.
 
 ### Step 1
 
-Master
+
+#### Master
+
 1.
     + curl -L https://bootstrap.saltstack.com -o install_salt.sh
     + sudo sh install_salt.sh -M
 2.
     + Make sure ports 4505 and 4506 are open
     
-Minion
+#### Minion
+
 1.
     + curl -L https://bootstrap.saltstack.com -o install_salt.sh
     + sudo sh install_salt.sh
@@ -31,7 +34,9 @@ Minion
 
 ### Step 2
 
-Master
+
+#### Master
+
 1.
     + Accepts all keys from minions
     + sudo salt-key --accept-all
