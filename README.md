@@ -10,6 +10,8 @@ Setup:
     1)
       curl -L https://bootstrap.saltstack.com -o install_salt.sh
       sudo sh install_salt.sh -M
+    2)
+      Make sure ports 4505 and 4506 are open
 
   Minion:
     1)
@@ -20,4 +22,16 @@ Setup:
        Edit /etc/salt/minion
        master should be set to the IP of the master
 
+    3)
+      sudo service salt-minion restart
+
 2)
+  Master:
+    1)
+      sudo salt-key --accept-all
+    2)
+      run a test command to ensure everything works ex:
+      salt '*' cmd.run 'ls -l /etc'
+    3)
+      copy salt states to the base environment for salt
+      (by default this is /srv/salt)
