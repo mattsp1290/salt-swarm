@@ -4,6 +4,8 @@ SaltStack + Docker Swarm = &lt;3
 The goal of this project is to launch a Docker Swarm via SaltStack.
 For experimentation I am using CentOS 7 VMs on AWS.
 
+***
+
 Setup
   1.
     Master
