@@ -1,7 +1,8 @@
 Check Yum for updates:
   cmd.run:
     - name: yum check-update
-    - stateful: false
+    - stateful:
+      - test_name: ls
 
 Install Docker:
   cmd.run:
