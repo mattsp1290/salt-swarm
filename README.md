@@ -38,14 +38,14 @@ For experimentation I am using CentOS 7 VMs on AWS.
 #### Master
 
 1.
-    + Accepts all keys from minions
-    + sudo salt-key --accept-all
+        Accepts all keys from minions
+        sudo salt-key --accept-all
 2.
-    + run a test command to ensure everything works ex:
-    + salt '*' cmd.run 'ls -l /etc'
+        run a test command to ensure everything works ex:
+        salt '*' cmd.run 'ls -l /etc'
 3.
-    + copy salt states to the base environment for salt
-    + (by default this is /srv/salt)
+        copy salt states to the base environment for salt
+        (by default this is /srv/salt)
 4.
-    + install Docker on all minions
-    + sudo salt '*' state.apply docker
+        install Docker on all minions
+        sudo salt '*' state.apply docker
